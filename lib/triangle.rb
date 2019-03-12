@@ -1,7 +1,7 @@
 require 'pry'
 class Triangle
 
-  attr_reader :s1, :s2, :s3
+  attr_reader :s1, :s2
 
   def initialize(s1, s2, s3)
     @s1 = s1
