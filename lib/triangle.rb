@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-    if (self.s1 <= 0 || self.s2 <= 0 || self.s3 <= 0) && self.s1 + self.s2 <= self.s3
+    if (self.s1 <= 0 || self.s2 <= 0 || self.s3 <= 0) && (self.s1 + self.s2 <= self.s3)
       raise TriangleError
     elsif self.s1 == self.s2 && self.s2 == self.s3 && self.s3 == self.s1
       :equilateral
