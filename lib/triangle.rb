@@ -12,6 +12,8 @@ class Triangle
   def kind
   if self.s1 == self.s2 && self.s2 == self.s3 && self.s1 > 0 && self.s2 > 0 && self.s3 > 0
     :equilateral
+  elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s3 == self.s1
+    :isosceles
   end
 end
 end
