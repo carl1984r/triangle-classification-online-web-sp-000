@@ -10,6 +10,8 @@ class Triangle
   end
 
   def kind
+
+    
     if self.s1 == self.s2 && self.s2 == self.s3
       :equilateral
     elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s3 == self.s1
@@ -21,7 +23,8 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    # triangle error code
+    def message 
+      "Invalid Triangle"
   end
 
 end
