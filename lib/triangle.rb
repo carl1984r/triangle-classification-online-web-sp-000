@@ -17,7 +17,7 @@ class Triangle
           puts error.message
       end
     else
-    if self.s1 == self.s2 && self.s2 == self.s3
+    if self.s1 == self.s2 && self.s2 == self.s3 && self.s3 == self.s1
       :equilateral
     elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s3 == self.s1
       :isosceles
