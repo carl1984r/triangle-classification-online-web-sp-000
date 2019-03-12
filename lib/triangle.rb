@@ -11,6 +11,7 @@ class Triangle
 
   def kind
   if ((self.s1 + self.s2) <= self.s3) || ((self.s2 + self.s3) <= self.s1) || ((self.s3 + self.s1) <= self.s2)
+    binding.pry
      begin
         raise TriangleError
       rescue TriangleError => error
