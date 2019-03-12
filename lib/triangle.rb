@@ -10,13 +10,6 @@ class Triangle
   end
 
   def kind
-  if ((self.s1 + self.s2) <= self.s3) || ((self.s2 + self.s3) <= self.s1) || ((self.s3 + self.s1) <= self.s2)
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
-    else
     if self.s1 == self.s2 && self.s2 == self.s3 && self.s3 == self.s1
       :equilateral
     elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s3 == self.s1
@@ -24,6 +17,12 @@ class Triangle
     elsif
       self.s1 != self.s2 && self.s2 != self.s3 && self.s3 != self.s1
       :scalene
+    else
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
     end
   end
 end
