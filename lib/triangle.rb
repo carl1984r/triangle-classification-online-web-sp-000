@@ -18,10 +18,7 @@ class Triangle
       self.s1 != self.s2 && self.s2 != self.s3 && self.s3 != self.s1
       :scalene
     elsif self.s1 <= 0 || self.s2 <= 0 || self.s3 <= 0
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
+        raise TriangleError    
       end
     end
 end
