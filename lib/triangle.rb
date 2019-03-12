@@ -14,7 +14,7 @@ class Triangle
     :equilateral
   elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s3 == self.s1
     :isosceles
-  elsif 
+  elsif
     self.s1 != self.s2 && self.s2 != self.s3 && self.s3 != self.s1
     :scalene
   end
