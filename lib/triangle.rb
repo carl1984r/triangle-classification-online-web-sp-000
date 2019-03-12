@@ -16,7 +16,7 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    else   
+    else
     if self.s1 == self.s2 && self.s2 == self.s3
       :equilateral
     elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s3 == self.s1
