@@ -18,5 +18,5 @@ class Triangle
     self.s1 != self.s2 && self.s2 != self.s3 && self.s3 != self.s1
     :scalene
   end
-end
+  end
 end
