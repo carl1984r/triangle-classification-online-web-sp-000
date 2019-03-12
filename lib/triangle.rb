@@ -10,8 +10,13 @@ class Triangle
   end
 
   def kind
-
-
+  if (self.s1 + self.s2) <= self.s3
+     begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
+    else   
     if self.s1 == self.s2 && self.s2 == self.s3
       :equilateral
     elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s3 == self.s1
